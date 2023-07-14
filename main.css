@@ -7,6 +7,10 @@ body{
     color: white;
     /* opacity: 0.2; */
 }
+
+a {
+    text-decoration: none;
+}
 .is-flex{
     display: flex;
 }
