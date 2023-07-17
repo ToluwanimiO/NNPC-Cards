@@ -1,27 +1,18 @@
-// Selecting the html class and
-// convert it to an object
+const shareButtons = document.querySelectorAll('.tile-share-button')
+console.log(shareButtons)
 
-const sharebtn =
-	document.querySelector('.sharebtn')
+async function copyText(e) {
+//prevent button going to the site
+    e.preventDefault()
+    const link = this.getAttribute('link')
+    console.log(link)
+    try {
+        await navigator.clipboard.writeText(link)
+        alert("Copied the text: " + link)
+    } catch (err) {
+        console.error(err)
+    }
+}
 
-// Creating a bool variable for changing
-// the image of share button
-let bool = 0
-
-// Adding an event listener
-sharebtn.addEventListener('click', () => {
-
-	// As we clicked the mouse over
-	// the share button the bool value.
-	// get flipped and then working of
-	// if-else loop get starts
-	bool = !bool
-	
-	if (bool == 0) {
-		sharebtn.innerHTML =
-			'<i class="far fa-share-square"></i>'
-	} else {
-		sharebtn.innerHTML =
-			'<i class="fas fa-times"></i>'
-	}
-})
+shareButtons.forEach(shareButton =>
+    shareButton.addEventListener('click', copyText))

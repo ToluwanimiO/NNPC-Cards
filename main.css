@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 body{
-    background: linear-gradient(rgba(140, 150, 157, 0.9) 25%,#746050,#717373);
+    background: #1A2F3E;
     padding:30px;
     text-align: center;
     height: 100vh;
@@ -11,38 +11,47 @@ body{
 a {
     text-decoration: none;
 }
+
 .is-flex{
     display: flex;
 }
+
 .justify-between{
     justify-content: space-between
 }
+
 .border-50{
     border-radius: 50%;
 }
+
 .icon-sm{
     font-size: 12px;
     font-weight: 100
 }
 .icon-lg{
     font-size: 50px;
-    /* font-weight: 100 */
+    padding-top: 15px;
 }
+
 .large-text{
     font-size: 30px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .support-text{
+    margin-top: -1%;
     font-size: 15px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .link-text{
     font-size: 30px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .btn-light-color {
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
@@ -56,12 +65,14 @@ a {
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
   }
+
   .bg-dark-styled{
      background-color:rgba(78, 68, 59, 0.30);
      
      border:none;
      /* opacity: 0.5; */
   }
+
   .white{
       color: white;
   }
