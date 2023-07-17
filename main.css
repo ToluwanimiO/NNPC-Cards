@@ -38,7 +38,9 @@ a {
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
+.thicken{
+    -webkit-text-stroke: 1px;
+}
 .support-text{
     margin-top: -1%;
     font-size: 15px;
