@@ -41,6 +41,9 @@ a {
 .thicken{
     -webkit-text-stroke: 1px;
 }
+.mb-40{
+    margin-bottom:40px;
+}
 .support-text{
     margin-top: -1%;
     font-size: 15px;
